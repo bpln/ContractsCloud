@@ -14,7 +14,7 @@ We propose a new contracts-based resource sharing model for federated geo-distri
  + How to Calculate the Utility of Each Cloud Service Provider?
  + How to Schedule the Jobs Among the Geo-distributed Data Centers?
 
-## How System Works?
+## How the System Works?
  + Auction-based Contracts Establishment (Designed based on McAfee Mechanism)
     + Truthfulness: No Intuitive to Cheat Makes the Market with More Efficient and Fairness
     + Budget Balance: Keeps the Federation with Sustainable Development
