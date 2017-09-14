@@ -1,92 +1,31 @@
-# The Minimal theme
+# Cloud Federation using Resource Sharing Contracts
 
-[![Build Status](https://travis-ci.org/pages-themes/minimal.svg?branch=master)](https://travis-ci.org/pages-themes/minimal) [![Gem Version](https://badge.fury.io/rb/jekyll-theme-minimal.svg)](https://badge.fury.io/rb/jekyll-theme-minimal)
+We propose a new contracts-based resource sharing model for federated geo-distributed clouds that allows cloud service providers to establish resource sharing contracts with individual datacenters apriori for defined time intervals during a 24 hour time period. Based on the established contracts, individual cloud service providers employ a cost-aware job scheduling and provisioning algorithm that enables tasks to complete and meet their response time requirements. The proposed techniques are evaluated through extensive experiments using realistic workloads and the results demonstrate the effectiveness, scalability and resource sharing efficiency of the proposed model.
 
-*Minimal is a Jekyll theme for GitHub Pages. You can [preview the theme to see what it looks like](http://pages-themes.github.io/minimal), or even [use it today](#usage).*
+## What is the challenge? 
+ + How to Decide the Resource Sharing Contracts between Multiple Cloud Service Providers with Fairness and Efficiency?
+ + How to Calculate the Utility of Each Cloud Service Provider?
+ + How to Schedule the Jobs Among the Geo-distributed Data Centers?
 
-![Thumbnail of minimal](thumbnail.png)
+## How the System Works?
+ + Auction-based Contracts Establishment (Designed based on McAfee Mechanism)
+    + Truthfulness: No Intuitive to Cheat Makes the Market with More Efficient and Fairness
+    + Budget Balance: Keeps the Federation with Sustainable Development
+    + Naturally Finds the Equilibrium Between the Supply and Demand
+ + Fine-grained Utility Function Design Considers:
+    + Operating Cost
+    + Charges from Users
+    + Penalty of Violating SLA
+ + Resource Sharing Contracts
+    + Relative Long Time Contracts Avoid Frequent Migrations
+    + Predetermined: Do Not Disturb the Normal Operations of the Data Centers
+ + Cost-aware Scheduling based on the Contracts
+    + Optimize the Cost of Using the Contracts
 
-## Usage
+**Publications**
 
-To use the Minimal theme:
+ + Jinlai Xu, Balaji Palanisamy (2017). [Cost-aware Resource Management for Federated Clouds Using Resource Sharing Contracts](https://www.researchgate.net/publication/317097662_Cost-Aware_Resource_Management_for_Federated_Clouds_Using_Resource_Sharing_Contracts), IEEE Cloud 2017.
+ 
+**Slides**
 
-1. Add the following to your site's `_config.yml`:
-
-    ```yml
-    theme: jekyll-theme-minimal
-    ```
-
-2. Optionally, if you'd like to preview your site on your computer, add the following to your site's `Gemfile`:
-
-    ```ruby
-    gem "github-pages", group: :jekyll_plugins
-    ```
-
-
-
-## Customizing
-
-### Configuration variables
-
-Minimal will respect the following variables, if set in your site's `_config.yml`:
-
-```yml
-title: [The title of your site]
-description: [A short description of your site's purpose]
-```
-
-Additionally, you may choose to set the following optional variables:
-
-```yml
-show_downloads: ["true" or "false" to indicate whether to provide a download URL]
-google_analytics: [Your Google Analytics tracking ID]
-```
-
-### Stylesheet
-
-If you'd like to add your own custom styles:
-
-1. Create a file called `/assets/css/style.scss` in your site
-2. Add the following content to the top of the file, exactly as shown:
-    ```scss
-    ---
-    ---
-
-    @import "{{ site.theme }}";
-    ```
-3. Add any custom CSS (or Sass, including imports) you'd like immediately after the `@import` line
-
-### Layouts
-
-If you'd like to change the theme's HTML layout:
-
-1. [Copy the original template](https://github.com/pages-themes/minimal/blob/master/_layouts/default.html) from the theme's repository<br />(*Pro-tip: click "raw" to make copying easier*)
-2. Create a file called `/_layouts/default.html` in your site
-3. Paste the default layout content copied in the first step
-4. Customize the layout as you'd like
-
-## Roadmap
-
-See the [open issues](https://github.com/pages-themes/minimal/issues) for a list of proposed features (and known issues).
-
-## Project philosophy
-
-The Minimal theme is intended to make it quick and easy for GitHub Pages users to create their first (or 100th) website. The theme should meet the vast majority of users' needs out of the box, erring on the side of simplicity rather than flexibility, and provide users the opportunity to opt-in to additional complexity if they have specific needs or wish to further customize their experience (such as adding custom CSS or modifying the default layout). It should also look great, but that goes without saying.
-
-## Contributing
-
-Interested in contributing to Minimal? We'd love your help. Minimal is an open source project, built one contribution at a time by users like you. See [the CONTRIBUTING file](CONTRIBUTING.md) for instructions on how to contribute.
-
-### Previewing the theme locally
-
-If you'd like to preview the theme locally (for example, in the process of proposing a change):
-
-1. Clone down the theme's repository (`git clone https://github.com/pages-themes/minimal`)
-2. `cd` into the theme's directory
-3. Run `script/bootstrap` to install the necessary dependencies
-4. Run `bundle exec jekyll serve` to start the preview server
-5. Visit [`localhost:4000`](http://localhost:4000) in your browser to preview the theme
-
-### Running tests
-
-The theme contains a minimal test suite, to ensure a site with the theme would build successfully. To run the tests, simply run `script/cibuild`. You'll need to run `script/bootstrap` one before the test script will work.
+<iframe src="https://onedrive.live.com/embed?cid=E1DD6EDD2DA4DFBE&resid=E1DD6EDD2DA4DFBE%2121398&authkey=ANCwepdLkgdg-Xo&em=2" width="600" height="450" frameborder="0" scrolling="no"></iframe>
